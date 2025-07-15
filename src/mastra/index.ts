@@ -18,7 +18,7 @@ export const mastra = new Mastra({
   }),
   server: {
     experimental_auth: new MastraJwtAuth({
-      secret: "ABC123"
+      secret: process.env.MASTRA_JWT_SECRET
     })
   }
 });
