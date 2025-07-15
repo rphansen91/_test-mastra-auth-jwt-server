@@ -5,6 +5,8 @@ import { LibSQLStore } from "@mastra/libsql";
 import { weatherWorkflow } from "./workflows/weather-workflow";
 import { weatherAgent } from "./agents/weather-agent";
 
+console.log("process.env.MASTRA_JWT_SECRET: ", process.env.MASTRA_JWT_SECRET);
+
 export const mastra = new Mastra({
   workflows: { weatherWorkflow },
   agents: { weatherAgent },
