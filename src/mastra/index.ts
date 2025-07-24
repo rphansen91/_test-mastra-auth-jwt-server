@@ -19,7 +19,7 @@ export const mastra = new Mastra({
   // Hard coding means Playground errors with a 403
   server: {
     experimental_auth: new MastraJwtAuth({
-      secret: "ABC123"
+      secret: "a-string-secret-at-least-256-bits-long"
     })
   }
   // Using an env var means the dev server errors because it can't find the env var
